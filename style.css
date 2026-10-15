@@ -79,10 +79,9 @@ a:hover {
     color: var(--color-primary-dark); 
 } 
  
-a:focus-visible { 
+a:focus { 
     outline: 2px solid var(--color-primary); 
     outline-offset: 2px; 
-    box-shadow: 0 0 0 4px var(--color-bg-white); /* halo claro para fondos oscuros */
 } 
 
 /* ========== LAYOUT ========== */ 
@@ -382,27 +381,12 @@ footer a {
         --color-border: #374151; 
     } 
 } 
-
-/* ========== MEJORAS DE ACCESIBILIDAD ========== */
-body {
-color: #111827;
+/* ========== AJUSTES DE ESPACIADO ========== */
+.features-grid {
+gap: var(--spacing-md);
 }
-a    {
-    color: #1e40af;
-    font-weight: 500;
-}
-
-/* Indicador de foco, para quien navega con el teclado */
-input:focus,
-textarea:focus,
-button:focus {
-outline: 3px solid #1e40af;
-outline-offset: 3px;
-}
-figcaption {
-font-size: var(--font-size-sm);
-color: var(--color-text-light);
-text-align: center;
-margin-top: var(--spacing-sm);
-font-style: italic;
+.btn {
+min-height: 0;
+padding: 4px 10px;
+font-size: 0.75rem;
 }
